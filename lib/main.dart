@@ -35,7 +35,7 @@ class _RecipeGeneratorState extends State<RecipeGenerator> {
 
   String _generatedRecipe = '';
   Future<void> _generateRecipe() async {
-    final String apiUrl = 'https://flask-recipe-gen.vercel.app/generate_recipe';
+    final String apiUrl = 'https://r-g-g.vercel.app/generate_recipe';
     final List<String> ingredients = _ingredientsController.text.split(',');
     final Map<String, dynamic> requestBody = {'ingredients': ingredients};
     final response = await http.post(
